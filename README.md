@@ -14,3 +14,11 @@ python scraper.py
 ```sh
 npm run dev
 ```
+
+To publish:
+
+```sh
+npm run deploy
+# Push your changes
+git subtree split --branch deploy --prefix epa/dist/
+```
