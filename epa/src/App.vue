@@ -35,13 +35,9 @@ import OpenAI from 'openai';
             Loading...
           </b-button>
         </b-form>
-        <!-- <b-card class="mt-3" header="Form Data Result">
-          <pre class="m-0">{{ form }}</pre>
-        </b-card> -->
       </b-col>
 
       <b-col cols="8" class="epa-table-container">
-        <!-- sticky-header no-border-collapse -->
         <b-table hover responsive small primary-key="_id" sort-by="_id" sortDesc="true"
           :items="items" :fields="fields" class="epa-table"></b-table>
       </b-col>
@@ -186,9 +182,6 @@ export default {
         temperature: 0,
         max_tokens: 1,
       });
-      // for await (const chunk of stream) {
-      //   console.log(chunk.choices[0]?.delta?.content || '');
-      // }
       return response.choices[0]?.message?.content || ''
     }
   }
