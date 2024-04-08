@@ -21,4 +21,5 @@ To publish:
 npm run deploy
 # Push your changes
 git subtree split --branch deploy --prefix epa/dist/
+git push https://github.com/davidheineman/epa deploy
 ```
