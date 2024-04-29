@@ -1,0 +1,7 @@
+epa/dist/** linguist-documentation
+prompts/** linguist-documentation
+epa/src/assets/** linguist-documentation
+requirements.txt -linguist-detectable
+*.ipynb -linguist-detectable
+*.js -linguist-detectable
+*.json -linguist-detectable
